@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Allows vertical alignment of content */
+  justify-content: center; /* Centers content vertically within container */
+  align-items: center; /* Centers content horizontally within container */
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 500px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+
+.slide-submit {
+  position: relative;
+  width: 250px;
+  height: 40px;
+  line-height: 50px;
+  background: white;
+  padding: 4px;
+  border: 1px solid #dddddd;
+  margin: 20px auto 0; /* Centers the slider horizontally */
+}
+
+.slide-submit .slide-submit-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  content: ">>";
+  background: #dd3a3a;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.slide-submit .slide-submit-text {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: calc(100% - 50px);
+  text-align: center;
+  line-height: 50px;
+  color: #a7adb3;
+  font-weight: bold;
+}
+
+.slide-submit.active .slide-submit-thumb {
+  left: calc(100% - 50px);
+  background: #4caf50;
+}
+
+.container img {
+  top: 0;
+  width: 30%;
+  height: 20%;
+}
