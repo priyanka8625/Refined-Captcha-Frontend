@@ -16,3 +16,9 @@ This repository is a part of the project that introduces a robust CAPTCHA system
 ## Video Demonstration
 Check out the video demonstration of the CAPTCHA solution:
 [Watch the Video](https://youtu.be/ANMIA00MvIc?si=p8f13S7QrOhL-d66)
+
+## Live Demo of the ML solution
+
+You can access the live version of the ML solution deployed on Streamlit here:
+
+[Live Demo](https://passive-captcha-ml-solution.streamlit.app/)
